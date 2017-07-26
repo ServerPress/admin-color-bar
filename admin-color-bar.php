@@ -3,7 +3,7 @@
  * Plugin Name: Admin Color Bar
  * Plugin URL: https://serverpress.com/plugins/admin-bar-color
  * Description: Changes the Admin bar color
- * Version: 1.2
+ * Version: 1.2.1
  * Author: Gregg Franklin
  * Author URI: http://greggfranklin.com
  * Text Domain: admin-color-bar
