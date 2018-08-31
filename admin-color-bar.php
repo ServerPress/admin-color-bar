@@ -24,6 +24,7 @@ class DS_AdminColorBar
 	{
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'wp_head', array( $this, 'footer' ) );
+		add_action( 'admin_bar_menu', array( $this, 'admin_bar_notice' ) );
 	}
 
 	public static function get_instance()
@@ -72,6 +73,21 @@ class DS_AdminColorBar
 	.ab-item:before { color: #EEE !important }
 </style>
 <?php
+	}
+
+	public function admin_bar_notice()
+	{
+		$settings = self::get_settings();
+		$message = empty( $settings['message'] ) ? 'DEVELOPMENT WEBSITE' : $settings['message'];
+
+		$admin_notice = array(
+			'parent'	=> 'top-secondary',						// puts it on the right side
+			'id'		=> 'environment-notice',
+			'title'		=> '<span>' . esc_html( $message ) . '</span>',
+		);
+
+		global $wp_admin_bar;
+		$wp_admin_bar->add_menu( $admin_notice );
 	}
 }
 
