@@ -62,6 +62,7 @@ class DS_AdminColorBar
 	    #wp-admin-bar-environment-notice > div > span {
 	        /*color: #EEE !important;*/
 	        font-size: 130% !important;
+			line-height: 2em !important;
 	    }
 		#wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before {
 			color: <?php echo $textcolor; ?> !important;
