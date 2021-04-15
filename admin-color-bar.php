@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Admin Color Bar
- * Plugin URL: https://serverpress.com/plugins/admin-bar-color
+ * Plugin URI: https://serverpress.com/plugins/admin-bar-color
  * Description: Changes the Admin bar color
  * Version: 1.2.3
  * Author: Gregg Franklin, Dave Jesch
